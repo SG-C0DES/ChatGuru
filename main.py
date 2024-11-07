@@ -13,7 +13,8 @@ def respond(query):
     return res
 
 
-tabs = st.tabs(["Home", "Chat"])
+tabs = st.tabs(["Home", "Chat", "History"])
+history = []
 with tabs[0]:
     st.title("ChatGuru- The New Chat Bot")
     st.header("*" * 20)
@@ -39,3 +40,10 @@ with tabs[1]:
             st.write("Selected rating:", str(rating), "/5")
         else:
             st.warning("Please enter query first.")
+with tabs[2]:
+    st.title("Chat History")
+    if history == []:
+        st.write("Nothing to see here.")
+    else:
+        for hist in history:
+            st.write(hist)
