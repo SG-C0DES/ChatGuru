@@ -34,6 +34,7 @@ with tabs[1]:
             with st.spinner("Generating a great answer..."):
                 time.sleep(3)
             st.success(response.text)
+            history.append(query)
             rating = st.select_slider('Select Rating of Answer',
                                       options=[1, 2, 3, 4, 5],
                                       value=5)
