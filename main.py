@@ -18,7 +18,7 @@ with tabs[0]:
     st.title("ChatGuru- The New Chat Bot")
     st.header("*" * 20)
     st.subheader(
-        "ChatHQU is a chatbot that can answer your questions about anything. And by anything, we mean ANYTHING."
+        "ChatGuru is a chatbot that can answer your questions about anything. And by anything, we mean ANYTHING."
     )
     with Image.open("my_image.png") as image:
         st.sidebar.write('Meet the Creator')
